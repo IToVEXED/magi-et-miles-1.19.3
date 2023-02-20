@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "magimiles",
+	"version": "${version}",
+	"name": "Magi Et Miles",
+	"description": "Magi et Miles is a Minecraft mod that introduces a new level of magical depth and \naesthetic beauty to the game. With a focus on spell tomes and magical effects, players can craft and use stunning \nnew spells to transform the world around them. Whether it's summoning the winds to aid you in battle or accelerating \nplant growth with the cast of a spell, each spell is unique and visually captivating. With the addition of rare ingredients \nand new crafting systems, players must delve deep into the nether and beyond to master the art of magic and become \ntrue magi or miles.",
+	"authors": [
+		"VEXED"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/magimiles/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.vexed.magimiles.MagiMiles"
+		],
+		"client": [
+			"net.vexed.magimiles.MagiMilesClient"
+		],
+		"fabric-datagen": [
+			"net.vexed.magimiles.MagiMilesDataGenerator"
+		]
+	},
+	"mixins": [
+		"magimiles.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.14",
+		"minecraft": "~1.19.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
