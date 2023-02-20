@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.vexed.magimiles.item.ModItemGroup;
 import net.vexed.magimiles.item.ModItems;
+import net.vexed.magimiles.util.ModLootTableModifiers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,5 +16,7 @@ public class MagiMiles implements ModInitializer {
 	public void onInitialize() {
 		ModItemGroup.registerItemGroups();
 		ModItems.registerModItems();
+
+		ModLootTableModifiers.modifyLootTables();
 	}
 }
