@@ -11,15 +11,21 @@ import net.minecraft.util.Identifier;
 import net.vexed.magimiles.MagiMiles;
 
 public class ModItems {
+    //ITEMS
     public static final Item HELLISH_RESIDUE = registerItem("hellish_residue",
             new Item(new FabricItemSettings()));
     public static final Item INFERNAL_GUNK = registerItem("infernal_gunk",
             new Item(new FabricItemSettings()));
+
+
+    //SPELL TOMES
     public static final Item BLANK_TOME = registerItem("blank_tome",
             new Item(new FabricItemSettings()));
     public static final Item FLAME_RUSH_TOME = registerItem("flame_rush_tome",
             new Item(new FabricItemSettings()));
     public static final Item SURGE_OF_FROST_TOME = registerItem("surge_of_frost_tome",
+            new Item(new FabricItemSettings()));
+    public static final Item POISON_VOLLEY_TOME = registerItem("poison_volley_tome",
             new Item(new FabricItemSettings()));
 
     private static Item registerItem(String name, Item item) {
@@ -32,6 +38,7 @@ public class ModItems {
         addToItemGroup(ModItemGroup.SPELLBOOKS, BLANK_TOME);
         addToItemGroup(ModItemGroup.SPELLBOOKS, FLAME_RUSH_TOME);
         addToItemGroup(ModItemGroup.SPELLBOOKS, SURGE_OF_FROST_TOME);
+        addToItemGroup(ModItemGroup.SPELLBOOKS, POISON_VOLLEY_TOME);
 
     }
 
