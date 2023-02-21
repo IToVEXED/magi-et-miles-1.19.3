@@ -15,6 +15,12 @@ public class ModItems {
             new Item(new FabricItemSettings()));
     public static final Item INFERNAL_GUNK = registerItem("infernal_gunk",
             new Item(new FabricItemSettings()));
+    public static final Item BLANK_TOME = registerItem("blank_tome",
+            new Item(new FabricItemSettings()));
+    public static final Item FLAME_RUSH_TOME = registerItem("flame_rush_tome",
+            new Item(new FabricItemSettings()));
+    public static final Item SURGE_OF_FROST_TOME = registerItem("surge_of_frost_tome",
+            new Item(new FabricItemSettings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(MagiMiles.MOD_ID, name), item);
@@ -23,6 +29,10 @@ public class ModItems {
     public static void addItemsToItemGroup() {
         addToItemGroup(ItemGroups.INGREDIENTS, HELLISH_RESIDUE);
         addToItemGroup(ItemGroups.INGREDIENTS, INFERNAL_GUNK);
+        addToItemGroup(ModItemGroup.SPELLBOOKS, BLANK_TOME);
+        addToItemGroup(ModItemGroup.SPELLBOOKS, FLAME_RUSH_TOME);
+        addToItemGroup(ModItemGroup.SPELLBOOKS, SURGE_OF_FROST_TOME);
+
     }
 
     private static void addToItemGroup(ItemGroup group, Item item) {

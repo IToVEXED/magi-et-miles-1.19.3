@@ -1,6 +1,9 @@
 {
   "item.magimiles.hellish_residue": "Hellish Residue",
   "item.magimiles.infernal_gunk": "Infernal Gunk",
+  "item.magimiles.blank_tome": "Blank Tome",
+  "item.magimiles.flame_rush_tome": "Flame Rush",
+  "item.magimiles.surge_of_frost_tome": "Surge Of Frost",
 
   "itemgroup.spellbooks": "Spellbooks"
 }
