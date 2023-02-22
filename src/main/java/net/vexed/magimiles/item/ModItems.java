@@ -20,13 +20,13 @@ public class ModItems {
 
     //SPELL TOMES
     public static final Item BLANK_TOME = registerItem("blank_tome",
-            new Item(new FabricItemSettings()));
+            new Item(new FabricItemSettings().maxCount(1)));
     public static final Item FLAME_RUSH_TOME = registerItem("flame_rush_tome",
-            new Item(new FabricItemSettings()));
+            new Item(new FabricItemSettings().maxCount(1)));
     public static final Item SURGE_OF_FROST_TOME = registerItem("surge_of_frost_tome",
-            new Item(new FabricItemSettings()));
+            new Item(new FabricItemSettings().maxCount(1)));
     public static final Item POISON_VOLLEY_TOME = registerItem("poison_volley_tome",
-            new Item(new FabricItemSettings()));
+            new Item(new FabricItemSettings().maxCount(1)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(MagiMiles.MOD_ID, name), item);
