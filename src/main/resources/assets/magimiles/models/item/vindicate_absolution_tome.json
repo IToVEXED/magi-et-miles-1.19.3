@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "magimiles:item/blank_tome",
-		"particle": "magimiles:item/blank_tome"
+		"0": "magimiles:item/vindicate_absolution_tome",
+		"particle": "magimiles:item/vindicate_absolution_tome"
 	},
 	"elements": [
 		{

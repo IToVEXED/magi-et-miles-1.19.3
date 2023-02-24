@@ -27,6 +27,8 @@ public class ModItems {
             new Item(new FabricItemSettings().maxCount(1)));
     public static final Item POISON_VOLLEY_TOME = registerItem("poison_volley_tome",
             new Item(new FabricItemSettings().maxCount(1)));
+    public static final Item VINDICATE_ABSOLUTION_TOME = registerItem("vindicate_absolution_tome",
+            new Item(new FabricItemSettings().maxCount(1)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(MagiMiles.MOD_ID, name), item);
@@ -35,10 +37,12 @@ public class ModItems {
     public static void addItemsToItemGroup() {
         addToItemGroup(ItemGroups.INGREDIENTS, HELLISH_RESIDUE);
         addToItemGroup(ItemGroups.INGREDIENTS, INFERNAL_GUNK);
+
         addToItemGroup(ModItemGroup.SPELLBOOKS, BLANK_TOME);
         addToItemGroup(ModItemGroup.SPELLBOOKS, FLAME_RUSH_TOME);
         addToItemGroup(ModItemGroup.SPELLBOOKS, SURGE_OF_FROST_TOME);
         addToItemGroup(ModItemGroup.SPELLBOOKS, POISON_VOLLEY_TOME);
+        addToItemGroup(ModItemGroup.SPELLBOOKS, VINDICATE_ABSOLUTION_TOME);
 
     }
 
