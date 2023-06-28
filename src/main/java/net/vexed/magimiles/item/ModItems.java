@@ -16,7 +16,26 @@ public class ModItems {
             new Item(new FabricItemSettings()));
     public static final Item INFERNAL_GUNK = registerItem("infernal_gunk",
             new Item(new FabricItemSettings()));
-
+    public static final Item CURSED_ASHES = registerItem("cursed_ashes",
+            new Item(new FabricItemSettings()));
+    public static final Item FOOLS_GOLD = registerItem("fools_gold",
+            new Item(new FabricItemSettings()));
+    public static final Item SULFUROUS_MIASMA = registerItem("sulfurous_miasma",
+            new Item(new FabricItemSettings()));
+    public static final Item NECROTIC_ASHES = registerItem("necrotic_ashes",
+            new Item(new FabricItemSettings()));
+    public static final Item ARCANE_ESSENCE = registerItem("arcane_essence",
+            new Item(new FabricItemSettings()));
+    public static final Item EIDOLIC_ROT = registerItem("eidolic_rot",
+            new Item(new FabricItemSettings()));
+    public static final Item ENCHANTED_AMBER = registerItem("enchanted_amber",
+            new Item(new FabricItemSettings()));
+    public static final Item VOIDSTONE_FRAGMENT = registerItem("voidstone_fragment",
+            new Item(new FabricItemSettings()));
+    public static final Item FROZEN_ESSENCE = registerItem("frozen_essence",
+            new Item(new FabricItemSettings()));
+    public static final Item PRIMORDIAL_ESSENCE = registerItem("primordial_essence",
+            new Item(new FabricItemSettings()));
 
     //SPELL TOMES
     public static final Item BLANK_TOME = registerItem("blank_tome",
@@ -37,6 +56,16 @@ public class ModItems {
     public static void addItemsToItemGroup() {
         addToItemGroup(ItemGroups.INGREDIENTS, HELLISH_RESIDUE);
         addToItemGroup(ItemGroups.INGREDIENTS, INFERNAL_GUNK);
+        addToItemGroup(ItemGroups.INGREDIENTS, CURSED_ASHES);
+        addToItemGroup(ItemGroups.INGREDIENTS, FOOLS_GOLD);
+        addToItemGroup(ItemGroups.INGREDIENTS, SULFUROUS_MIASMA);
+        addToItemGroup(ItemGroups.INGREDIENTS, NECROTIC_ASHES);
+        addToItemGroup(ItemGroups.INGREDIENTS, ARCANE_ESSENCE);
+        addToItemGroup(ItemGroups.INGREDIENTS, EIDOLIC_ROT);
+        addToItemGroup(ItemGroups.INGREDIENTS, ENCHANTED_AMBER);
+        addToItemGroup(ItemGroups.INGREDIENTS, VOIDSTONE_FRAGMENT);
+        addToItemGroup(ItemGroups.INGREDIENTS, FROZEN_ESSENCE);
+        addToItemGroup(ItemGroups.INGREDIENTS, PRIMORDIAL_ESSENCE);
 
         addToItemGroup(ModItemGroup.SPELLBOOKS, BLANK_TOME);
         addToItemGroup(ModItemGroup.SPELLBOOKS, FLAME_RUSH_TOME);
