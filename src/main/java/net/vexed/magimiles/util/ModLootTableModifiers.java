@@ -22,6 +22,10 @@ public class ModLootTableModifiers {
             = new Identifier("minecraft", "blocks/gold_ore");
     private static final Identifier WITHER_SKELETON_ID
             = new Identifier("minecraft", "entities/wither_skeleton");
+    private static final Identifier WITHER_ID
+            = new Identifier("minecraft", "entities/wither");
+    private static final Identifier ENDER_DRAGON_ID
+            = new Identifier("minecraft", "entities/wither_skeleton");
 
     public static  void modifyLootTables() {
         LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
@@ -47,6 +51,26 @@ public class ModLootTableModifiers {
                         .conditionally(RandomChanceLootCondition.builder(0.2f))
                         .conditionally(KilledByPlayerLootCondition.builder())
                         .with(ItemEntry.builder(ModItems.CURSED_ASHES))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+                tableBuilder.pool(poolBuilder.build());
+            }
+
+            if (WITHER_ID.equals(id)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(1f))
+                        .conditionally(KilledByPlayerLootCondition.builder())
+                        .with(ItemEntry.builder(ModItems.PRIMORDIAL_ESSENCE))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+                tableBuilder.pool(poolBuilder.build());
+            }
+
+            if (ENDER_DRAGON_ID.equals(id)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(1f))
+                        .conditionally(KilledByPlayerLootCondition.builder())
+                        .with(ItemEntry.builder(ModItems.PRIMORDIAL_ESSENCE))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
                 tableBuilder.pool(poolBuilder.build());
             }
